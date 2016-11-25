@@ -1,0 +1,78 @@
+#include <iostream>
+#include <stdlib.h>
+#include <stdio.h> 
+#include <string>
+#include <windows.h>
+#define PAUSE() system("pause")
+
+using namespace std;
+ 
+main(){
+	
+	system("title ī�� ����.exe");
+	system("mode con:cols=66 lines=30");
+	
+	int Number_M;
+	
+	while(1){	//���� �ݺ� �� �� 
+		
+		
+	
+	cout<<"\n\n\n\t  ============= ī�� ���� ============="<<"\n\n\n\n\n\t\t\t1. ���ӽ���"<<"\n\n\n\t\t\t2. ���� ��Ģ"<<"\n\n\n\t\t\t3. ������";
+	cout<<"\n\n\n\n\t  ==========================by.KimJiEum"<<"\n\t  �ر�Ģ ���� �����ϼ���.";
+	cout<<"\n\n\n\t  �ϰ��� �ϴ� ��ȣ�� �Է��ϼ���: " <<endl;
+	cin >> Number_M;
+
+		
+
+	switch(Number_M){	//��ȣ�� ���� �� ȭ���� ���� ��. 
+		
+		case 1:		//���� �� �� 
+			
+			system("cls");
+            cout<<"���� �������Դϴ�. ���߿� �� �ֽʽÿ�.";
+			
+            break;
+         
+		 
+		   
+        case 2:		//�����/��� 
+        	
+			
+			system("cls");
+            cout<<"������ �ҷ����� ���Դϴ�. ��ø� ��ٷ��ּ���."<<endl;
+            
+			//PAUSE();
+			system("type ���ӹ��.txt");
+			
+			
+			cout<<"\n\n�� ���������� �ƹ�Ű �� ���� ��������."<<endl;
+             
+            char BACK;	//�ǵ��ư��� ���� ������. 
+            cin>>BACK;
+            system("cls");
+            break;
+			
+			case 3:		//���� �� �� 
+			system("cls");
+			cout<<"������ �����մϴ�."<<endl;
+			return 1;
+			break;
+			
+			
+			default :		//�� ���� �ٸ� ��ư ������ ��. 
+			system("cls");
+			cout<<"������ ���ڸ� �Է��ϼ���. �޴��� ���ư��ϴ�."<<endl;
+			PAUSE();
+				
+			break;
+			
+		};
+		
+	};
+
+
+		
+	
+};
+
